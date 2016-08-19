@@ -1,3 +1,15 @@
+"""
+This module looks at genbank features for coding sequences 'CDS' and then
+outputs the gene name, orientation, and sequence in nucleotides per line. 
+Infile searching is done utilizing the Bio python imports SeqIO and Seq.
+
+First look up all features with Biopython, finding CDS, then get the location.
+The orientation will determine the sequence as pulled from the below fasta and,
+if complementary, the sequence will be complemented.
+
+python fasta_cds_genbank.py GU19504.gb > genes_seq.txt
+"""
+
 import sys
 import re
 from Bio import SeqIO, Seq 
