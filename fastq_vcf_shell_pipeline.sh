@@ -16,7 +16,7 @@ if [ -z $5 ]
     reuse Java-1.8
     reuse GATK3
     reuse Picard-Tools
-    #smalt map -n 4 $RUN_DIR/$REFERENCE $RUN_DIR/$SAMPLE > $RUN_DIR/$PREFIX.sam
+    smalt map -n 4 $RUN_DIR/$REFERENCE $RUN_DIR/$SAMPLE > $RUN_DIR/$PREFIX.sam
 
     samtools view -hbF -4 $RUN_DIR/$PREFIX.sam > $RUN_DIR/$PREFIX.mapped.bam
 
