@@ -25,7 +25,7 @@ executed also gets updated.
 
 Crontab:
 # run hiseq monitor every 30 minutes to convert bcl2fastq
-2 * * * * /usr/bin/python /path/to/hiseq_monitor.py
+*/30 * * * * /usr/bin/python /path/to/hiseq_monitor.py
 
 """
 
